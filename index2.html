@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer pagina reb responsive</title>
+</head>
+<body>
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+        header, nav, main, footer {
+            padding: 15px;
+        }
+        header{
+            background:#333;
+            color:white;
+        }
+        nav{
+            background:#eee;
+            text-align:center;
+        }
+        footer{
+            background:#333;
+            color:white;
+            text-align:center;
+        }
+        /*contenedor principal*/
+        .contenedor{
+            display:flex;
+            gap:50px;
+            padding:15px;
+        }
+        .col{
+            background:#f6f6f6;
+            padding: 15px;
+            flex: 1px;
+        }
+        /**/
+        @media (max-width: 700px) {
+            .contenedor {
+                flex-direction: column;}
+        }
+        nav a {
+            margin-right:10px;
+            text-decoration: none;
+            color:#333;
+        }
+        .col img{
+            max-width: 100%;
+            height:auto;
+        }
+    </style>
+    <header>
+        <h1>Mi web responsive (Saraí Henríquez)</h1>
+        <p>Ejemplo simple para entender responsive</p>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <main>
+        <div class="contenedor">
+            <section class="col">
+                <h2>Sección 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam incidunt eaque praesentium autem ullam, necessitatibus voluptas dolorum officia perferendis quaerat dignissimos sit ut excepturi obcaecati, totam nemo labore placeat aut.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis repellat veritatis quod est dolorem! Dolorum commodi nesciunt, exercitationem et magnam omnis quae reiciendis. Eveniet dolor ipsam architecto vero placeat!</p>
+                <img src="https://wallpapers.com/images/featured/imagenes-de-imagen-79gc4p3mqu7an848.jpg">
+            </section>
+            <section class="col">
+                <h2>Sección 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo incidunt temporibus, alias nemo dolor nostrum id facilis quia rem ipsum nulla voluptatibus. Optio neque rerum voluptas quam, necessitatibus ea?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea pariatur dolores officiis laudantium expedita totam veritatis nobis! At nemo eveniet consequatur corporis repellendus quaerat ipsum animi suscipit illum, laborum illo!</p>
+                 <img src="https://wallpapers.com/images/featured/imagenes-de-imagen-79gc4p3mqu7an848.jpg">
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2026 - ejemplo sencillo</p>
+    </footer>
+    
+</body>
+</html>

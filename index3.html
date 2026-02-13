@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi segunda pagina web responsive</title>
+</head>
+<body>
+    <style>
+        body {
+            margin:0;
+            font-family:Arial, sans-serif;
+            line-height:1.5;
+        }
+        header, nav, main, footer {
+            padding:15px;
+        }
+        header{
+            background:#2b6cb0;
+            color:white;
+        }
+        nav {
+            background:#e2e8f0;
+            text-align:center;
+        }
+        nav a{
+           margin-right:10px;
+            text-decoration: none;
+            color:#333;
+        }
+        footer {
+            background:#2b6cb0;
+            color:white;
+            text-align:center;
+        }
+        /*grid de 2 columnas*/
+        .grid {
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:15px;
+            padding:15px;
+        }
+        .caja{
+            background:#f7fafc;
+            padding:15px;
+            border: 1px solid #ddd;
+            box-shadow: 5px 5px 25px 5px rgb(102, 100, 100);
+            border-radius:35px;
+        }
+        .caja img{
+            max-width: 100%;
+            height:auto;
+        }
+        .nav a img{
+            width:10px;
+        
+        }
+           
+    </style>
+    <header>
+        <h1>Mi web Responsive (Saraí Henríquez)</h1>
+        <p>Ejemplo simple usando grid</p>
+        <nav>
+            <a><img src="https://static.vecteezy.com/system/resources/previews/002/520/838/original/apple-logo-black-isolated-on-transparent-background-free-vector.jpg"></a>
+            <a href="#">Inicio</a>
+            <a href="#">Blog</a>
+            <a href="#">Acerca</a>
+        </nav>
+     </header>   
+
+        <main>
+            <div class="grid">
+                <article class="caja">
+                    <h2>Artículo 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quam ducimus rem, asperiores aliquam dolore quos, incidunt veniam atque minima id. Alias quia pariatur officia delectus velit suscipit architecto minus.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores debitis, omnis iste numquam dolorem nihil laudantium. Mollitia, quibusdam eligendi deleniti eum architecto et neque beatae aliquam molestias quaerat expedita? Animi.</p>
+                    <img src="https://wallpapers.com/images/featured/imagenes-de-imagen-79gc4p3mqu7an848.jpg"></img>
+                </article>
+                <article class="caja">
+                    <h2>Artículo 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident molestiae iusto quo placeat, pariatur animi ratione sed voluptatum, vero repellendus quia explicabo consequuntur repudiandae laudantium perferendis eum? Aperiam, excepturi error!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum libero eveniet est nostrum modi repudiandae, cumque ab reiciendis optio a veniam voluptatem quod cupiditate exercitationem accusantium quam maxime ipsum?</p>
+                      <img src="https://wallpapers.com/images/featured/imagenes-de-imagen-79gc4p3mqu7an848.jpg"></img>
+                </article>
+                <article class="caja">
+                    <h2>Artículo 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident molestiae iusto quo placeat, pariatur animi ratione sed voluptatum, vero repellendus quia explicabo consequuntur repudiandae laudantium perferendis eum? Aperiam, excepturi error!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum libero eveniet est nostrum modi repudiandae, cumque ab reiciendis optio a veniam voluptatem quod cupiditate exercitationem accusantium quam maxime ipsum?</p>
+                      <img src="https://wallpapers.com/images/featured/imagenes-de-imagen-79gc4p3mqu7an848.jpg"></img>
+                </article>
+            </div>
+        </main>
+        <footer>&copy; ejemplo sencillo</footer>
+    
+</body>
+</html>
